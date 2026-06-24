@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autofreak – Autoaufbereitung Wien</title>
+  <meta name="description" content="Autofreak – Professionelle Autoaufbereitung in Wien. Premium Innenreinigung, Politur, Keramikversiegelung und mehr." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-mark">af</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">autofreak</span>
+          <span class="nav-logo-sub">Autoaufbereitung</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services" data-de="Leistungen" data-en="Services">Leistungen</a></li>
+        <li><a href="#about" data-de="Über uns" data-en="About">Über uns</a></li>
+        <li><a href="#gallery" data-de="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="#contact" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-lang" id="langToggle">EN</button>
+        <button class="btn btn-gold" onclick="scrollToBooking()" data-de="Termin buchen" data-en="Book Now">Termin buchen</button>
+        <button class="btn btn-outline" id="navAuthBtn" onclick="openAuth()" data-de="Anmelden" data-en="Sign In">Anmelden</button>
+      </div>
+      <button class="nav-burger" id="burgerBtn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#services" onclick="closeMobile()" data-de="Leistungen" data-en="Services">Leistungen</a>
+  <a href="#about" onclick="closeMobile()" data-de="Über uns" data-en="About">Über uns</a>
+  <a href="#gallery" onclick="closeMobile()" data-de="Galerie" data-en="Gallery">Galerie</a>
+  <a href="#contact" onclick="closeMobile()" data-de="Kontakt" data-en="Contact">Kontakt</a>
+  <button class="btn btn-gold" onclick="closeMobile(); scrollToBooking()">Termin buchen</button>
+  <button class="btn btn-outline" onclick="closeMobile(); openAuth()">Anmelden</button>
+</div>
+
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span class="hero-badge-text" data-de="Professionelle Autoaufbereitung Wien" data-en="Professional Auto Detailing Vienna">Professionelle Autoaufbereitung Wien</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-de="Dein Auto." data-en="Your Car.">Dein Auto.</span><br>
+        <span class="gold-text" data-de="Unser Meisterwerk." data-en="Our Masterpiece.">Unser Meisterwerk.</span>
+      </h1>
+      <p class="hero-subtitle" data-de="Von der Innenreinigung bis zur Keramikversiegelung – wir bringen deinen Wagen zum Strahlen." data-en="From interior cleaning to ceramic coating — we make your car shine.">Von der Innenreinigung bis zur Keramikversiegelung – wir bringen deinen Wagen zum Strahlen.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-gold" onclick="scrollToBooking()" data-de="Jetzt Termin buchen" data-en="Book Appointment">Jetzt Termin buchen</button>
+        <a href="#services" class="btn btn-outline" data-de="Leistungen ansehen" data-en="View Services">Leistungen ansehen</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-num">500<span style="color:var(--gold)">+</span></div><div class="hero-stat-label" data-de="Zufriedene Kunden" data-en="Happy Clients">Zufriedene Kunden</div></div>
+        <div><div class="hero-stat-num">5<span style="color:var(--gold)">★</span></div><div class="hero-stat-label" data-de="Bewertung" data-en="Rating">Bewertung</div></div>
+        <div><div class="hero-stat-num">3<span style="color:var(--gold)">+</span></div><div class="hero-stat-label" data-de="Jahre Erfahrung" data-en="Years Experience">Jahre Erfahrung</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg><span>Scrollen</span></div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <span class="section-tag" data-de="Unsere Leistungen" data-en="Our Services">Unsere Leistungen</span>
+      <h2 class="section-title" data-de="Was wir für dein Auto tun" data-en="What We Do for Your Car">Was wir für dein Auto tun</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card"><div class="service-icon">🪣</div><div class="service-name" data-de="Innenreinigung Basic" data-en="Interior Cleaning Basic">Innenreinigung Basic</div><div class="service-desc" data-de="Staubsaugen, Armaturenbrett, Fenster, Matten." data-en="Vacuuming, dashboard, windows, mats.">Staubsaugen, Armaturenbrett, Fenster, Matten.</div><div class="service-price">ab €59 <span>inkl. MwSt.</span></div></div>
+      <div class="service-card"><div class="service-icon">✨</div><div class="service-name" data-de="Innenreinigung Premium" data-en="Interior Cleaning Premium">Innenreinigung Premium</div><div class="service-desc" data-de="Basic + Tiefenreinigung Sitze, Lederreinigung, Desinfektion." data-en="Basic + deep seat cleaning, leather care, disinfection.">Basic + Tiefenreinigung Sitze, Lederreinigung, Desinfektion.</div><div class="service-price">ab €129 <span>inkl. MwSt.</span></div></div>
+      <div class="service-card"><div class="service-icon">🌟</div><div class="service-name" data-de="Außenwäsche & Politur" data-en="Exterior Wash & Polish">Außenwäsche & Politur</div><div class="service-desc" data-de="Handwäsche, Felgenreinigung, Politur, Versiegelung." data-en="Hand wash, wheel cleaning, polish, sealant.">Handwäsche, Felgenreinigung, Politur, Versiegelung.</div><div class="service-price">ab €89 <span>inkl. MwSt.</span></div></div>
+      <div class="service-card"><div class="service-icon">💎</div><div class="service-name" data-de="Keramikversiegelung" data-en="Ceramic Coating">Keramikversiegelung</div><div class="service-desc" data-de="Langzeitschutz – bis zu 3 Jahre." data-en="Long-term protection – up to 3 years.">Langzeitschutz – bis zu 3 Jahre.</div><div class="service-price">ab €299 <span>inkl. MwSt.</span></div></div>
+      <div class="service-card"><div class="service-icon">🔧</div><div class="service-name" data-de="Kratzer & Delle" data-en="Scratch & Dent">Kratzer & Delle</div><div class="service-desc" data-de="Kratzerentfernung und Dellenreparatur ohne Neulackierung." data-en="Scratch removal and paintless dent repair.">Kratzerentfernung und Dellenreparatur ohne Neulackierung.</div><div class="service-price" data-de="auf Anfrage" data-en="on request">auf Anfrage</div></div>
+      <div class="service-card"><div class="service-icon">🚗</div><div class="service-name" data-de="Komplett-Paket" data-en="Complete Package">Komplett-Paket</div><div class="service-desc" data-de="Innen + Außen Premium + Keramik + Kratzerentfernung." data-en="Interior + Exterior Premium + Ceramic + Scratches.">Innen + Außen Premium + Keramik + Kratzerentfernung.</div><div class="service-price">ab €499 <span>inkl. MwSt.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <p class="about-label" data-de="Über Autofreak" data-en="About Autofreak">Über Autofreak</p>
+        <h2 class="about-title" data-de="Leidenschaft für Perfektion" data-en="Passion for Perfection">Leidenschaft für Perfektion</h2>
+        <div class="divider left"></div>
+        <p class="about-text" data-de="Autofreak steht für erstklassige Autoaufbereitung mit Liebe zum Detail. Wir sind Autoliebhaber genau wie du – und deshalb behandeln wir jedes Fahrzeug, als wäre es unser eigenes." data-en="Autofreak stands for top-class auto detailing with love for detail. We are car enthusiasts just like you.">Autofreak steht für erstklassige Autoaufbereitung mit Liebe zum Detail. Wir sind Autoliebhaber genau wie du – und deshalb behandeln wir jedes Fahrzeug, als wäre es unser eigenes.</p>
+        <div class="about-features">
+          <div class="about-feature"><span class="about-feature-dot"></span><span data-de="Premium Produkte von führenden Marken" data-en="Premium products from leading brands">Premium Produkte von führenden Marken</span></div>
+          <div class="about-feature"><span class="about-feature-dot"></span><span data-de="Flexible Terminvergabe" data-en="Flexible scheduling">Flexible Terminvergabe</span></div>
+          <div class="about-feature"><span class="about-feature-dot"></span><span data-de="Zufriedenheitsgarantie" data-en="Satisfaction guarantee">Zufriedenheitsgarantie</span></div>
+          <div class="about-feature"><span class="about-feature-dot"></span><span data-de="Mobile Aufbereitung möglich" data-en="Mobile detailing available">Mobile Aufbereitung möglich</span></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card-main"><div class="big-num">500+</div><div class="big-label" data-de="Aufbereitete Fahrzeuge" data-en="Vehicles Detailed">Aufbereitete Fahrzeuge</div></div>
+        <div class="about-cards-row">
+          <div class="about-mini-card"><div class="about-mini-num gold-text">3+</div><div class="about-mini-label" data-de="Jahre Erfahrung" data-en="Years">Jahre</div></div>
+          <div class="about-mini-card"><div class="about-mini-num gold-text">5★</div><div class="about-mini-label" data-de="Bewertung" data-en="Rating">Bewertung</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header">
+      <span class="section-tag" data-de="Unsere Arbeit" data-en="Our Work">Unsere Arbeit</span>
+      <h2 class="section-title" data-de="Vorher & Nachher" data-en="Before & After">Vorher & Nachher</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><div class="gallery-placeholder"><span style="font-size:2rem">🚗</span><span data-de="Fotos folgen" data-en="Photos coming soon">Fotos folgen</span></div></div>
+      <div class="gallery-item"><div class="gallery-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><div class="gallery-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><div class="gallery-placeholder"><span>📸</span></div></div>
+      <div class="gallery-item"><div class="gallery-placeholder"><span>📸</span></div></div>
+    </div>
+    <p style="text-align:center;margin-top:2rem;color:var(--text-mid);font-size:0.85rem;">📌 Fotos in den img/ Ordner legen und Platzhalter austauschen.</p>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container">
+    <div class="booking-header">
+      <span class="section-tag" data-de="Terminbuchung" data-en="Book Appointment">Terminbuchung</span>
+      <h2 class="section-title" data-de="Termin online buchen" data-en="Book Appointment Online">Termin online buchen</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="booking-card">
+      <div id="bookingMsg" class="msg-box"></div>
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div class="form-group"><label data-de="Vorname" data-en="First Name">Vorname</label><input type="text" id="bookFirstName" placeholder="Max" required /></div>
+          <div class="form-group"><label data-de="Nachname" data-en="Last Name">Nachname</label><input type="text" id="bookLastName" placeholder="Mustermann" required /></div>
+          <div class="form-group"><label data-de="E-Mail" data-en="Email">E-Mail</label><input type="email" id="bookEmail" placeholder="max@beispiel.at" required /></div>
+          <div class="form-group"><label data-de="Telefon" data-en="Phone">Telefon</label><input type="tel" id="bookPhone" placeholder="+43 660 123 4567" /></div>
+          <div class="form-group">
+            <label data-de="Leistung" data-en="Service">Leistung</label>
+            <select id="bookService" required>
+              <option value="">Bitte wählen...</option>
+              <option value="innen_basic">Innenreinigung Basic (ab €59)</option>
+              <option value="innen_premium">Innenreinigung Premium (ab €129)</option>
+              <option value="aussen">Außenwäsche & Politur (ab €89)</option>
+              <option value="keramik">Keramikversiegelung (ab €299)</option>
+              <option value="kratzer">Kratzer & Delle</option>
+              <option value="komplett">Komplett-Paket (ab €499)</option>
+            </select>
+          </div>
+          <div class="form-group"><label data-de="Wunschtermin" data-en="Preferred Date">Wunschtermin</label><input type="date" id="bookDate" required /></div>
+          <div class="form-group full"><label data-de="Fahrzeug" data-en="Vehicle">Fahrzeug (Marke, Modell, Farbe)</label><input type="text" id="bookCar" placeholder="z.B. BMW 3er, Schwarz" /></div>
+          <div class="form-group full"><label data-de="Anmerkungen" data-en="Notes">Anmerkungen (optional)</label><textarea id="bookNotes" placeholder="Besondere Wünsche..."></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-gold booking-submit" data-de="Termin anfragen" data-en="Request Appointment">Termin anfragen</button>
+      </form>
+      <p class="booking-note"><span data-de="Bereits Kunde? " data-en="Already a customer? ">Bereits Kunde? </span><a href="#" onclick="openAuth(); return false;">Anmelden</a><span data-de=" um Termine zu verwalten." data-en=" to manage appointments."> um Termine zu verwalten.</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-tag" data-de="Kontakt" data-en="Contact">Kontakt</span>
+        <h2 class="contact-info-title" data-de="Meld dich bei uns" data-en="Get in Touch">Meld dich bei uns</h2>
+        <p class="contact-info-sub" data-de="Fragen oder Sonderwünsche? Wir freuen uns von dir zu hören!" data-en="Questions or special requests? We'd love to hear from you!">Fragen oder Sonderwünsche? Wir freuen uns von dir zu hören!</p>
+        <div class="contact-items">
+          <div class="contact-item"><div class="contact-item-icon">📍</div><div><div class="contact-item-label">Standort</div><div class="contact-item-value">Wien, Österreich</div></div></div>
+          <div class="contact-item"><div class="contact-item-icon">📞</div><div><div class="contact-item-label">Telefon</div><div class="contact-item-value">+43 XXX XXX XXXX</div></div></div>
+          <div class="contact-item"><div class="contact-item-icon">📧</div><div><div class="contact-item-label">E-Mail</div><div class="contact-item-value">info@autofreak.at</div></div></div>
+          <div class="contact-item"><div class="contact-item-icon">🕐</div><div><div class="contact-item-label">Öffnungszeiten</div><div class="contact-item-value" data-de="Mo–Sa: 8:00–18:00 Uhr" data-en="Mon–Sat: 8 AM – 6 PM">Mo–Sa: 8:00–18:00 Uhr</div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form-card">
+          <div class="contact-form-title" data-de="Nachricht senden" data-en="Send a Message">Nachricht senden</div>
+          <div id="contactMsg" class="msg-box"></div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group" style="margin-bottom:1rem;"><label>Name</label><input type="text" id="cName" placeholder="Max Mustermann" required /></div>
+            <div class="form-group" style="margin-bottom:1rem;"><label>E-Mail</label><input type="email" id="cEmail" placeholder="max@beispiel.at" required /></div>
+            <div class="form-group" style="margin-bottom:1rem;"><label data-de="Nachricht" data-en="Message">Nachricht</label><textarea id="cMessage" placeholder="Deine Nachricht..." required style="min-height:120px;"></textarea></div>
+            <button type="submit" class="btn btn-gold" style="width:100%;padding:0.9rem;" data-de="Absenden" data-en="Send">Absenden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <a href="#" class="nav-logo"><div class="nav-logo-mark">af</div><div class="nav-logo-text"><span class="nav-logo-name">autofreak</span><span class="nav-logo-sub">Autoaufbereitung</span></div></a>
+      <div class="footer-links">
+        <a href="#services">Leistungen</a><a href="#about">Über uns</a><a href="#gallery">Galerie</a><a href="#booking">Termin buchen</a><a href="#contact">Kontakt</a><a href="#">Datenschutz</a><a href="#">Impressum</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 autofreak – Autoaufbereitung. Alle Rechte vorbehalten.</span>
+      <span class="footer-made">Mit ❤️ für Autos gemacht</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="authModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeAuth()">✕</button>
+    <div class="modal-logo">
+      <div class="modal-logo-mark">af</div>
+      <div class="modal-title" id="modalTitle">Willkommen zurück</div>
+      <div class="modal-sub" id="modalSub">Meld dich an, um deine Termine zu verwalten</div>
+    </div>
+    <div class="modal-tabs">
+      <button class="modal-tab active" id="tabLogin" onclick="switchTab('login')">Anmelden</button>
+      <button class="modal-tab" id="tabRegister" onclick="switchTab('register')">Registrieren</button>
+    </div>
+    <div class="auth-form active" id="formLogin">
+      <div class="msg-box" id="loginMsg"></div>
+      <div class="modal-form-group"><label>E-Mail</label><input type="email" id="loginEmail" placeholder="deine@email.at" /></div>
+      <div class="modal-form-group"><label>Passwort</label><input type="password" id="loginPassword" placeholder="••••••••" /></div>
+      <button class="btn btn-gold modal-btn" onclick="handleLogin()">Anmelden</button>
+      <div class="modal-switch"><span>Noch kein Konto? </span><button onclick="switchTab('register')">Jetzt registrieren</button></div>
+    </div>
+    <div class="auth-form" id="formRegister">
+      <div class="msg-box" id="registerMsg"></div>
+      <div class="modal-form-group"><label>Name</label><input type="text" id="regName" placeholder="Max Mustermann" /></div>
+      <div class="modal-form-group"><label>E-Mail</label><input type="email" id="regEmail" placeholder="deine@email.at" /></div>
+      <div class="modal-form-group"><label>Passwort</label><input type="password" id="regPassword" placeholder="Min. 8 Zeichen" /></div>
+      <button class="btn btn-gold modal-btn" onclick="handleRegister()">Konto erstellen</button>
+      <div class="modal-switch"><span>Bereits Konto? </span><button onclick="switchTab('login')">Anmelden</button></div>
+    </div>
+  </div>
+</div>
+
+<div id="dashboard">
+  <div class="dash-header">
+    <div class="container">
+      <div class="dash-header-inner">
+        <div class="nav-logo"><div class="nav-logo-mark">af</div><div class="nav-logo-text"><span class="nav-logo-name">autofreak</span><span class="nav-logo-sub">Mein Bereich</span></div></div>
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <span class="dash-welcome" id="dashWelcome">Hallo, <strong>Kunde</strong></span>
+          <button class="btn btn-outline" style="padding:0.5rem 1.2rem;font-size:0.78rem;" onclick="handleLogout()">Abmelden</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dash-body">
+    <div class="container">
+      <h1 class="dash-title">Meine Termine</h1>
+      <p class="dash-subtitle">Hier siehst du alle deine gebuchten und vergangenen Termine.</p>
+      <div class="dash-cards">
+        <div class="dash-card"><div class="dash-card-label">Nächster Termin</div><div class="dash-card-value" id="dashNextApt">–</div></div>
+        <div class="dash-card"><div class="dash-card-label">Offene Anfragen</div><div class="dash-card-value" id="dashPending">0</div></div>
+        <div class="dash-card"><div class="dash-card-label">Abgeschlossen</div><div class="dash-card-value" id="dashCompleted">0</div></div>
+      </div>
+      <div class="dash-section-title">Alle Termine</div>
+      <div class="appointment-list" id="appointmentList">
+        <div class="no-appointments">
+          <p>Noch keine Termine vorhanden.</p>
+          <button class="btn btn-gold" style="margin-top:1rem;padding:0.7rem 1.5rem;" onclick="closeDashboard(); scrollToBooking();">Jetzt Termin buchen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
