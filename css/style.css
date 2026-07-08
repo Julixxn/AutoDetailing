@@ -154,6 +154,12 @@ body {
   text-decoration: none;
 }
 
+.nav-logo-img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
 .nav-logo-mark {
   width: 44px;
   height: 44px;
