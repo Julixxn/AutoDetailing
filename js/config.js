@@ -1,9 +1,3 @@
-// AUTOFREAK – Supabase Konfiguration
-// 1. Gehe zu https://supabase.com → kostenloses Konto erstellen
-// 2. Neues Projekt erstellen
-// 3. Settings > API → URL und anon key kopieren und hier eintragen
-
-const SUPABASE_URL = 'DEINE_SUPABASE_URL_HIER';
-const SUPABASE_ANON_KEY = 'DEIN_SUPABASE_ANON_KEY_HIER';
-
+const SUPABASE_URL = 'https://mvhswcwygxjdxoakpils.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_mCygQQnkf6gD3kwpfI48wQ_egnBZRSh';
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
